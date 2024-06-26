@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Responsive CSS Tabs</h1>
+
+<main>
+      <div class="tab-container">
+        <div class="tab-labels">
+          <div class="tab">
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1">Scan to BIM
+              <section id="content1">
+                <p>High density LIDAR scans & BIM modeling of existing conditions.</p>
+                <ul>
+                  <li>Up to LOD500 models</li>
+                  <li>U.S. based resources</li>
+                  <li>RVT or DWG files of existing conditions</li>
+                  <li>Accuracy within .5 inches</li>
+                </ul>
+              </section>
+            </label>
+          </div>
+    
+          <div class="tab">
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">BIM Modeling
+              <section id="content2">
+                <ul>
+                  <li>Up to LOD500 models</li>
+                  <li>U.S. based resources</li>
+                  <li>RVT or DWG files of existing conditions</li>
+                  <li>CD production</li>
+                </ul>
+              </section>
+            </label>
+          </div>
+    
+          <div class="tab">
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3">Interior Design Integration to BIM
+              <section id="content3">
+                <ul>
+                  <li>Finish schedule management</li>
+                  <li>Interior Design Construction Docs</li>
+                  <li>Selection Scheduling</li>
+                  <li>3D and VR visualizations</li>
+                </ul>
+              </section>
+            </label>
+          </div>
+    
+          <div class="tab">
+            <input id="tab4" type="radio" name="tabs">
+            <label for="tab4">Program Management
+              <section id="content4">
+                <ul>
+                  <li>Preconstruction team assembly</li>
+                  <li>Program management</li>
+                  <li>*requires BIM Modeling & ID to Integration to BIM Services</li>
+                  <li>**requires Scan to BIM services with existing conditions</li>
+                </ul>
+              </section>
+            </label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="image-container">
+        <img src="image1.png" alt="Tab Image" id="tabImage">
+      </div>
+    
+      <script src="imageSwap.js"></script>
+</main>
+</body>
+</html>
