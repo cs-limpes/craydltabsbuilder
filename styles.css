@@ -14,7 +14,7 @@ html, body {
 body {
   font: 14px/1 'Open Sans', sans-serif;
   color: #fff;
-  background: #4A4646;
+  background: #323436;
 }
 
 h1 {
@@ -32,7 +32,6 @@ main {
   display: flex;
   min-width: 320px;
   max-width: 750px;
-  padding: 50px;
   margin: 0 auto;
   background: #4A4646;
 }
@@ -90,9 +89,9 @@ label:hover {
 }
 
 label[for='tab1']:before { content: '\f1cb'; }
-label[for='tab2']:before { content: '\f17d'; }
-label[for='tab3']:before { content: '\f16b'; }
-label[for='tab4']:before { content: '\f1a9'; }
+label[for='tab2']:before { content: '\f19c'; }
+label[for='tab3']:before { content: '\f03e'; }
+label[for='tab4']:before { content: '\f64a'; }
 
 section {
   max-height: 0;
@@ -112,18 +111,24 @@ input:checked + label section {
   padding: 10px 0;
 }
 
-@media screen and (max-width: 650px) {
-  label {
-    font-size: 0;
+ul {
+  list-style:disc;
+  list-style-position: inside;
+
+}
+
+@media screen and (max-width: 760px) {
+  main {
+    flex-direction: column;
   }
-  label:before {
-    margin: 0;
-    font-size: 18px;
+
+  .image-container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .tab-container {
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 400px) {
-  label {
-    padding: 15px;
-  }
-}
