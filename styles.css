@@ -123,12 +123,12 @@ ul {
   }
 
   .image-container {
-    width: 100%;
+    width: 360px;
     margin-left: 0;
   }
 
   .tab-container {
-    width: 100%;
+    width: 360px;
   }
 }
 
